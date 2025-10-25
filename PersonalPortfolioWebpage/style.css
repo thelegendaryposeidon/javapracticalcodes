@@ -1,0 +1,84 @@
+/* Basic Styles & Light Mode */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    background-color: #35424a;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 900px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+/* Flexbox for Project Cards */
+.project-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap to the next line on small screens */
+    justify-content: space-around; /* Distributes space around items */
+}
+
+.project-card {
+    background-color: #e2e2e2;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 10px;
+    width: 250px; /* Fixed width for simplicity */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #35424a;
+    color: #ffffff;
+    margin-top: 2rem;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+body.dark-mode section {
+    background-color: #444;
+}
+
+body.dark-mode .project-card {
+    background-color: #555;
+    border-color: #666;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+    background-color: #222;
+}

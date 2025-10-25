@@ -1,0 +1,25 @@
+# Java / Eclipse
+*.class
+*.log
+.project
+.classpath
+.settings/
+build/
+target/
+
+# Spring Boot
+.mvn/
+mvnw
+mvnw.cmd
+
+# React
+node_modules/
+.DS_Store
+npm-debug.log
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
